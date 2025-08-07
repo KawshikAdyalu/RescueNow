@@ -66,30 +66,6 @@ text
 - Admin users can view reports, update statuses, and manage users
 - Use the map interface to view disaster locations and details
 
-## Project Structure
 
-/frontend
-/node_modules
-/public
-/src
-/components
-/pages
-/services
-index.js
-package.json
-.gitignore
 
-/backend (if applicable)
-... backend files ...
 
-text
-
-## Contributing
-
-1. Fork the repository  
-2. Create a feature branch (`git checkout -b feature/your-feature`)  
-3. Commit your changes (`git commit -m 'Add some feature'`)  
-4. Push to your branch (`git push origin feature/your-feature`)  
-5. Open a pull request
-
-Please ensure your code follows the project’s coding standards and is tested before submitting.
