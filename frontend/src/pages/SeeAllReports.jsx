@@ -11,7 +11,7 @@ function SeeAllReports({ token }) {
     page: 1,
     limit: 5
   });
-  const [total, setTotal] = useState(0);
+
   const [alert, setAlert] = useState('');
 
   const fetchDisasters = async () => {
