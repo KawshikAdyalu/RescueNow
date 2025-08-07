@@ -1,0 +1,87 @@
+/* Container */
+.login-page {
+  height: 100vh;
+  background: linear-gradient(90deg, #eef1f8 0%, #ffffff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card Box */
+.login-box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Title */
+.login-box h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 2rem;
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #dbe1e8;
+  border-radius: 8px;
+  background: #f9fafb;
+  margin-bottom: 1.25rem;
+  transition: border 0.2s ease;
+}
+
+.login-box input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  background: #fff;
+}
+
+/* Button */
+.login-box button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #2563eb;
+}
+
+.login-box button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* Message Styling */
+.login-msg {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+  font-weight: 500;
+  color: #ef4444; /* red */
+}
+
+.login-msg:before {
+  content: '⚠️ ';
+}
+
+.login-msg.success {
+  color: #16a34a;
+}

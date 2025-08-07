@@ -1,0 +1,112 @@
+.nearby-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+}
+
+.nearby-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-align: center;
+}
+
+.message {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-weight: 600;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.controls input {
+  flex: 1 1 120px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #f9fafb;
+  color: #111827;
+  min-width: 120px;
+}
+
+.controls button {
+  padding: 0.55rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  min-width: 140px;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:disabled {
+  background-color: #bfdbfe;
+  cursor: not-allowed;
+}
+
+.controls button:nth-child(4) {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.controls button:nth-child(4):hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.controls button:nth-child(5) {
+  background-color: #2563eb;
+  color: white;
+}
+
+.controls button:nth-child(5):hover:not(:disabled) {
+  background-color: #1e40af;
+}
+
+.results ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+.results li {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  color: #374151;
+}
+
+.results p {
+  font-style: italic;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 520px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls input,
+  .controls button {
+    width: 100%;
+    min-width: auto;
+  }
+}

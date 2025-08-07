@@ -1,0 +1,109 @@
+.admin-sos-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(37, 99, 235, 0.08);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #1e293b;
+}
+
+.sos-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.map-container {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.fallback-text {
+  font-style: italic;
+  text-align: center;
+  color: #6b7280;
+  margin: 2rem 0;
+}
+
+.sos-list-section {
+  margin-top: 2rem;
+}
+
+.sos-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sos-list-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #1e293b;
+}
+
+.clear-button {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clear-button:hover {
+  background-color: #dc2626;
+}
+
+.sos-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sos-card {
+  background-color: #fff1f2;
+  border: 1px solid #fca5a5;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(239, 68, 68, 0.08);
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.sos-card:hover {
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.12);
+}
+
+.sos-time {
+  font-size: 0.95rem;
+  color: #374151;
+  margin-bottom: 0.3rem;
+}
+
+.sos-body {
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+@media (max-width: 600px) {
+  .sos-list-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .clear-button {
+    width: 100%;
+    text-align: center;
+  }
+}

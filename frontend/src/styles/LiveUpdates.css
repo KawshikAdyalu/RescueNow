@@ -1,0 +1,125 @@
+.live-updates-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(37, 99, 235, 0.08);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #1e293b;
+}
+
+/* Header Style */
+.live-updates-header {
+  padding-bottom: 1rem;
+  margin-bottom: 1.8rem;
+  border-bottom: 2px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.live-updates-header h2 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* Clear Button */
+.btn-clear {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.55rem 1.1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-clear:hover {
+  background-color: #dc2626;
+}
+
+/* Updates Section */
+.live-updates-section {
+  padding-top: 1rem;
+}
+
+.empty-message {
+  text-align: center;
+  font-style: italic;
+  color: #6b7280;
+  font-size: 1.15rem;
+  margin-top: 2rem;
+}
+
+.updates-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.update-card {
+  background: linear-gradient(to bottom right, #f0f6ff, #ffffff);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.05);
+  border: 2px solid #a5b4fc;  /* Soft blue border */
+  transition: all 0.2s ease-in-out;
+}
+
+.update-card:hover {
+  box-shadow: 0 6px 24px rgba(37, 99, 235, 0.12);
+  background-color: #f3f7fe;
+  border-color: #6366f1;  /* Highlight border on hover */
+  transform: translateY(-2px);
+}
+
+
+
+.update-text {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.update-timestamp {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-align: right;
+}
+
+/* Labels */
+.label-new {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.label-update {
+  color: #059669;
+  font-weight: 600;
+}
+
+.label-sos {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.coords {
+  color: #64748b;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Optional if using status tags: active, resolved, etc. */
+.status-tag.active {
+  color: #0ea5e9;
+}
+
+.status-tag.resolved {
+  color: #22c55e;
+}

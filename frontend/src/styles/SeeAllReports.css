@@ -1,0 +1,123 @@
+.see-all-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+  padding: 2rem;
+}
+.see-all-container h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.filter-controls select {
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  color: #1e293b;
+  min-width: 120px;
+  cursor: pointer;
+}
+.filter-controls button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-width: 120px;
+}
+.filter-controls button:hover {
+  background-color: #2563eb;
+}
+.table-wrapper {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+thead {
+  background-color: #f3f4f6;
+}
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 1rem;
+  color: #334155;
+}
+tr:hover {
+  background-color: #eef2ff;
+}
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.pagination button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #3b82f6;
+  color: white;
+  transition: background-color 0.2s ease;
+  min-width: 100px;
+}
+.pagination button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+.pagination span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+.alert-message {
+  color: #dc2626;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filter-controls select,
+  .filter-controls button {
+    width: 100%;
+    min-width: auto;
+  }
+  .pagination {
+    flex-direction: column;
+  }
+  .pagination button {
+    width: 100%;
+    min-width: auto;
+  }
+  .pagination span {
+    margin: 1rem 0;
+  }
+}

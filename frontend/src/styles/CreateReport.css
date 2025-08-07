@@ -1,0 +1,159 @@
+.create-report-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(52, 72, 120, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+}
+
+.create-report-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-align: center;
+}
+
+.message {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.message.success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.message.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #f87171;
+}
+
+.geo-message {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 6px;
+}
+
+.geo-message.info {
+  color: #2563eb;
+  background-color: #dbeafe;
+  border: 1px solid #93c5fd;
+}
+
+.geo-message.error {
+  color: #dc2626;
+  background-color: #fee2e2;
+  border: 1px solid #f87171;
+}
+
+.geo-message.success {
+  color: #16a34a;
+  background-color: #dcfce7;
+  border: 1px solid #4ade80;
+}
+
+.create-report-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.create-report-form input[type="text"],
+.create-report-form input[type="number"],
+.create-report-form textarea,
+.create-report-form select {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  transition: border-color 0.2s ease;
+}
+
+.create-report-form input:focus,
+.create-report-form textarea:focus,
+.create-report-form select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+.coordinate-inputs {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.coordinate-inputs > div {
+  flex: 1;
+}
+
+.location-button {
+  margin-bottom: 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 180px;
+}
+
+.location-button:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.location-button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #2563eb;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.85rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 480px) {
+  .coordinate-inputs {
+    flex-direction: column;
+  }
+
+  .coordinate-inputs > div {
+    width: 100%;
+  }
+}
